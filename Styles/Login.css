@@ -1,0 +1,45 @@
+body{
+    background: linear-gradient(180deg,rgb(0,255,255),rgb(0,100,255));
+    background-attachment: fixed;
+    user-select: none;
+    -moz-user-select: none;
+}
+*{
+    margin: 0;
+}
+#load-div{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    height: 6px;
+}
+#load{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 6px;
+    background-color: rgb(255,255,255);
+    animation: load 4s forwards;
+    animation-delay: 2s;
+    border-radius: 20px;
+}
+@keyframes load{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 200;
+    color: white;
+    font-size: 40px;
+}
