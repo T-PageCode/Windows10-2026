@@ -6,6 +6,7 @@ body{
 }
 *{
     margin: 0;
+    font-weight: 200;
 }
 #bg-image{
     position: absolute;
@@ -64,4 +65,11 @@ body{
     border-radius: 20px;
     transition: opacity 0.5s ease,
     transform 0.5s ease; 
+}
+#user-div{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    transform: translate(-50%,-50%);
+    text-align: center;
 }
