@@ -2,19 +2,19 @@ const start = document.getElementById("start");
 const startMenu = document.getElementById("start-menu");
 let startTimeout = null;
 start.addEventListener("click", () => {
-    if (startMenu.style.opacity === "0" || startMenu.style.transform === "translate(-50%,-50%) scale(0.8)") {
-        clearTimeout(startTimeout);
-        startMenu.style.opacity = "1";
-        startMenu.style.transform = "translate(-50%,-50%) scale(1)";
-        startMenu.style.visibility = "visible";
-    }
-    else {
+    if (startMenu.style.opacity === "1" || startMenu.style.transform === "translate(-50%,-50%) scale(1)") {
         clearTimeout(startTimeout);
         startMenu.style.opacity = "0";
         startMenu.style.transform = "translate(-50%,-50%) scale(0.8)";
         startTimeout = setTimeout(() => {
             startMenu.style.visibility = "hidden";
         },500)
+    }
+    else {
+        clearTimeout(startTimeout);
+        startMenu.style.visibility = "visible";
+        startMenu.style.opacity = "1";
+        startMenu.style.transform = "translate(-50%,-50%) scale(1)";
     }
 });
 document.addEventListener("click",(e) => {
