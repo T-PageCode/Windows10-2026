@@ -3,6 +3,7 @@ body{
     background-attachment: fixed;
     user-select: none;
     -moz-user-select: none;
+    overflow: hidden;
 }
 *{
     margin: 0;
@@ -75,4 +76,37 @@ body{
     left: 150px;
     transform: translate(-50%,-50%);
     text-align: center;
+}
+#menu{
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0.8);
+    width: 150px;
+    height: 250px;
+    background-color: rgb(255,255,255);
+    border-radius: 20px;
+    transition: top 0.5s ease,
+    left 0.5s ease,
+    opacity 0.5s ease,
+    transform 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0 0 20px rgb(0,0,0,0.3))
+}
+#menu div{
+    width: 90%;
+    height: 35px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 12.5px;
+    line-height: 35px;
+    transition: background-color 0.5s ease;
+}
+#menu div:hover{
+    background-color: rgb(235,235,235);
+}
+#menu div:active{
+    background-color: rgb(225,225,225);
 }
