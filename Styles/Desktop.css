@@ -90,18 +90,18 @@ body{
     transform 0.5s ease;
     opacity: 0;
     visibility: hidden;
-    display: flex;
-    justify-content: center;
     filter: drop-shadow(0 0 20px rgb(0,0,0,0.3))
 }
 #menu div{
-    width: 90%;
-    height: 35px;
-    margin-top: 10px;
-    text-align: center;
     background-color: transparent;
+    text-align: center;
+    margin: 5px auto;
+    height: 40px;
+    width: 90%;
     border-radius: 12.5px;
-    line-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.5s ease;
 }
 #menu div:hover{
