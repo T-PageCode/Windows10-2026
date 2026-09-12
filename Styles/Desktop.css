@@ -124,7 +124,7 @@ body{
     flex-direction: column;
     border-radius: 20px;
     opacity: 0;
-    animation: messageshow 4s forwards;
+    animation: messageshow 5s forwards;
     animation-delay: 2s;
 }
 @keyframes messageshow{
