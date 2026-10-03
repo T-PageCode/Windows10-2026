@@ -12,7 +12,7 @@ body{
 #bg-image{
     position: absolute;
     top: 50%;
-    left: 75%;
+    left: 50%;
     transform: translate(-50%,-50%);
     height: 300px;
     filter: brightness(1.8);
